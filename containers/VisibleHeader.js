@@ -1,6 +1,5 @@
-// import { connect } from 'react-redux'
-// import Header from '../components/Header'
-
+import { connect } from 'react-redux'
+import Header from '../components/Header'
 
 
 
@@ -32,9 +31,14 @@
 //   }
 // }
 
-// const VisibleHeader = Header
 //   // mapStateToProps,
 //   // mapDispatchToProps
 // // )(Header)
+function mapStateToProps(state) {
+  return { todos: state.todos }
+}
+export default connect(null, {a:1})(Header)
 
-// export default VisibleHeader
+
+
+

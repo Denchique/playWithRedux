@@ -14,7 +14,7 @@ export default class Header extends React.Component{
 	headerClick(){
 		// this.props.store.dispatch({type:"ADD_TRACK",payload:'data from header component'})
 		// console.log(this.props)
-		console.log(this.state)
+		console.log(this.props)
 	}
 
 	render(){

@@ -3,11 +3,11 @@ import {render} from 'react-dom'
 import {connect} from 'react-redux'
 
 import Footer from './components/Footer'
-// import Header from './components/Header'
-import Content from './components/Content'
 import Header from './components/Header'
+import Content from './components/Content'
 
-// import VisibleHeader from './containers/VisibleHeader'
+
+import VisibleHeader from './containers/VisibleHeader'
 
 class App extends React.Component{
 	constructor(props){
@@ -18,7 +18,7 @@ class App extends React.Component{
 	render(){
 		return(
 			<div >
-				<Header/>
+				<VisibleHeader/>
 				<Content/>
 				<Footer/>
 			</div>
@@ -26,3 +26,4 @@ class App extends React.Component{
 	}
 };
 
+export default App
